@@ -1,5 +1,5 @@
 services:
-  comfyui:
+  ollama:
     init: true
     container_name: ollama
     build:
