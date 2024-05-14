@@ -1,6 +1,5 @@
 services:
   ollama:
-    init: true
     container_name: ollama
     build: .
     image: "jcsmith08/ollama"
@@ -16,4 +15,4 @@ services:
           devices:
             - driver: nvidia
               device_ids: ['0']
-              capabilities: [gpu]
+              capabilities: [compute,utility]
