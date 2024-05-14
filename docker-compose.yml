@@ -2,9 +2,7 @@ services:
   ollama:
     init: true
     container_name: ollama
-    build:
-      context: .
-      dockerfile: Dockerfile
+    build: .
     image: "jcsmith08/ollama"
     ports:
       - "11434:11434"
